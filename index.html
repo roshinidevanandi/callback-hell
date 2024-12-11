@@ -8,7 +8,7 @@
 <body>
     <h3 style="color: rgb(231, 39, 129);">Inspect the code to see the output in console</h3>
     <script>
-        // --------callback hell---------
+        // --------CALLBACK HELL---------
 
         function place_order(callback){
             setTimeout(()=>{
@@ -52,6 +52,52 @@
                 })
             })
         })
+
+
+        // -------------CALLBACK HELL USING PROMISES----------
+
+       
+        // let place_order=new Promise((res)=>{
+        //     setTimeout(()=>{
+        //         res("place order")
+        //     },1000)
+        // })
+        // let prepare_pizza=new Promise((res)=>{
+        //     setTimeout(()=>{
+        //         res("prepare pizza")
+        //     },2000)
+        // })
+        // let bake_pizza=new Promise((res)=>{
+        //     setTimeout(()=>{
+        //         res("bake pizza")
+        //     },1000)
+        // })
+        // let pack_pizza=new Promise((res)=>{
+        //     setTimeout(()=>{
+        //         res("pack pizza")
+        //     })
+        // })
+        // let deliver_pizza=new Promise((res)=>{
+        //     setTimeout(()=>{
+        //         res("deliver pizza")
+        //     })
+        // })
+
+        // async function demo(){
+        //     let place=await place_order()
+        //     let prepaer=await prepare_pizza()
+        //     let bake=await bake_pizza()
+        //     let pack=await pack_pizza()
+        //     let deliver=await deliver_pizza()
+
+        //     console.log(place);
+        //     console.log(prepare);
+        //     console.log(bake);
+        //     console.log(pack);
+        //     console.log(deliver);
+        // }
+        // demo();
+    
     
     </script>
 </body>
