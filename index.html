@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 style="color: rgb(231, 39, 129);">Inspect the code to see the output in console</h3>
+    <script>
+        // --------callback hell---------
+
+        function place_order(callback){
+            setTimeout(()=>{
+                console.log("place order")
+                callback()
+            },2000)
+        }
+        
+        function prepare_pizza(callback){
+            setTimeout(()=>{
+                console.log("prepare pizza")
+                callback()
+            },1000)
+        }
+        
+        function bake_pizza(callback){
+            setTimeout(() => {
+                console.log("bake pizza")
+                callback()
+            }, 3000)
+        }  
+
+        function pack_pizza(callback){
+            setTimeout(()=>{
+                console.log("pack pizza")
+                callback()
+            },2000)
+        }
+
+        function deliver_pizza(){
+            setTimeout(() => {
+                console.log("deliver pizza")
+            }, 2000);
+        }
+        place_order(()=>{
+            prepare_pizza(()=>{
+                bake_pizza(()=>{
+                    pack_pizza(()=>{
+                        deliver_pizza()
+                    })
+                })
+            })
+        })
+    
+    </script>
+</body>
+</html>
